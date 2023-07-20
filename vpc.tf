@@ -41,6 +41,10 @@ variable "az3" {
   type    = string
 }
 
+provider "aws" {
+  region = "us-east-1"
+}
+
 module "vpc" {
   source = "./modules/vpc"
 
